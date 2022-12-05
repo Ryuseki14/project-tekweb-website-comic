@@ -8,5 +8,4 @@
 
     $sql = "INSERT INTO login (Username, Email, Password) VALUES ('".$Username."' , '".$Email."' , '".$Password."')";
     $conn->exec($sql);
-    //jopan jelek
 ?>
