@@ -1,0 +1,51 @@
+.clear{
+  clear :both;
+  opacity: 0.5;
+}
+#main-menu{
+  background: rgba(28,28,28,0.95);
+}
+body{
+  background:#16151d;
+  font-size:14px;
+  line-height:1.5;
+  color:#b8b8b8;
+  margin:0 auto;
+  font-family:fira sans,sans-serif;
+  -webkit-font-smoothing:antialiased!important;
+  -moz-osx-font-smoothing:grayscale!important
+}
+
+#main-menu .centernav {
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 0 20px;
+}
+
+.register{
+    float: right;
+    margin-top: 7px;
+    background: rgba(0,0,0,.32);
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    padding: 5px 10px;
+    line-height: 1.5;
+}
+
+.Login{
+  float: right;
+  margin-top: 7px;
+  background: rgba(0,0,0,.32);
+  color: #fff;
+  font-size: 12px;
+  margin-right: 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  padding: 5px 10px;
+  line-height: 1.5;
+}
