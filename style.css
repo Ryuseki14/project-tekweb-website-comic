@@ -49,3 +49,17 @@ body{
   padding: 5px 10px;
   line-height: 1.5;
 }
+
+#init-links .c-btn.c-btn_style-1 {
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+}
+
+#init-links .c-btn.c-btn_style-1:first-child {
+  margin-left: 0;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: hsl(166, 92%, 41%) !important;
+}
