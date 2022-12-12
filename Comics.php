@@ -1,3 +1,11 @@
+<?php
+require('Persistence.php');
+$comment_post_ID = 1;
+$db = new Persistence();
+$comments = $db->get_comments($comment_post_ID);
+$has_comments = (count($comments) > 0);
+?>
+
 <html>
     <head>
         <style class="anchorjs"></style>
@@ -8,7 +16,8 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="comic.css">
+        
 
         <style type="text/css">
             img.wp-smiley,
@@ -239,7 +248,6 @@
                                 </div>
                                 
                                 <p></p>
-                                <p><a href="https://asura.gg/discord" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" src="https://asura.gg/wp-content/uploads/2022/01/ENDING-PAGE.jpg" alt="asura scans manhwa comic" class="alignnone size-full wp-image-22408" width="720" height="324"></a></p><div class="ai-viewport-3" data-insertion-position="prepend" data-selector=".ai-insert-18-53313223" data-insertion-no-dbg="" data-code="PGRpdiBjbGFzcz0nY29kZS1ibG9jayBjb2RlLWJsb2NrLTE4JyBzdHlsZT0nbWFyZ2luOiA4cHggYXV0bzsgdGV4dC1hbGlnbjogY2VudGVyOyBkaXNwbGF5OiBibG9jazsgY2xlYXI6IGJvdGg7Jz4KPCEtLSBQaG9uZSAvLyBCZXR3ZWVuIGltYWdlcyAtLT4KCjxkaXYgZGF0YS1wdy1tb2JpPSJtZWRfcmVjdF9idGYiPgo8L2Rpdj4KPC9kaXY+Cg==" data-block="18"></div><a href="https://asura.gg/discord" target="_blank" rel="noopener noreferrer">
                                 
                                 <div class="ai-viewport-1 ai-viewport-2" data-insertion-position="prepend" data-selector=".ai-insert-17-37242042" data-insertion-no-dbg="" data-code="PGRpdiBjbGFzcz0nY29kZS1ibG9jayBjb2RlLWJsb2NrLTE3JyBzdHlsZT0nbWFyZ2luOiA4cHggYXV0bzsgdGV4dC1hbGlnbjogY2VudGVyOyBkaXNwbGF5OiBibG9jazsgY2xlYXI6IGJvdGg7Jz4KPCEtLSBEZXNrdG9wLCBUYWJsZXQgLy8gQmV0d2VlbiBpbWFnZXMgLS0+Cgo8ZGl2IGRhdGEtcHctZGVzaz0ibWVkX3JlY3RfYnRmIj4KPC9kaXY+CjwvZGl2Pgo=" data-block="17"><div class="code-block code-block-17" style="margin: 8px auto; text-align: center; display: block; clear: both;">
                                 <!-- Desktop, Tablet // Between images -->
@@ -252,57 +260,68 @@
                                 </a> <p></p>
                                 <!-- AI CONTENT END 1 -->
                         </div>
-                        <div id="comments" class="bixbox comment-area">
-                            <div class="releases"><h2><span>Comment</span></h2></div>
-                            <div class="cmt commentx">
-                                <div class="ai-viewport-1 ai-viewport-2" data-insertion-position="prepend" data-selector=".ai-insert-15-44943118" data-insertion-no-dbg="" data-code="PGRpdiBjbGFzcz0nY29kZS1ibG9jayBjb2RlLWJsb2NrLTE1JyBzdHlsZT0nbWFyZ2luOiA4cHggYXV0bzsgdGV4dC1hbGlnbjogY2VudGVyOyBkaXNwbGF5OiBibG9jazsgY2xlYXI6IGJvdGg7Jz4KPCEtLSBTVEFSVCBDSEFQVEVSIFBBR0UgLS0+CjwhLS0gRGVza3RvcCwgVGFibGV0IC8vIEJlZm9yZSBwb3N0IC0tPgoKPGRpdiBkYXRhLXB3LWRlc2s9Im1lZF9yZWN0X2J0ZiI+CjwvZGl2PjwvZGl2Pgo=" data-block="15"><div class="code-block code-block-15" style="margin: 8px auto; text-align: center; display: block; clear: both;">
-                <!-- START CHAPTER PAGE -->
-                <!-- Desktop, Tablet // Before post -->
-
-                            <div data-pw-desk="med_rect_btf">
-                            </div></div>
-                            </div>
-
-                                <div class="ai-viewport-3" data-insertion-position="prepend" data-selector=".ai-insert-16-83208224" data-insertion-no-dbg="" data-code="PGRpdiBjbGFzcz0nY29kZS1ibG9jayBjb2RlLWJsb2NrLTE2JyBzdHlsZT0nbWFyZ2luOiA4cHggYXV0bzsgdGV4dC1hbGlnbjogY2VudGVyOyBkaXNwbGF5OiBibG9jazsgY2xlYXI6IGJvdGg7Jz4KPCEtLSBQaG9uZSAvLyBCZWZvcmUgcG9zdCAtLT4KCjxkaXYgZGF0YS1wdy1tb2JpPSJtZWRfcmVjdF9idGYiPgo8L2Rpdj48L2Rpdj4K" data-block="16"></div>
-
-										<div id="comments" class="comments-area">
-                            <div id="disqus_thread"><iframe id="dsq-app8835" name="dsq-app8835" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px !important; min-width: 100% !important; border: medium none !important; overflow: hidden !important; height: 9034px !important;" src="https://disqus.com/embed/comments/?base=default&amp;f=asurascans-com-1&amp;t_i=152640%20https%3A%2F%2Fasura.gg%2F%3Fp%3D152640&amp;t_u=https%3A%2F%2Fasura.gg%2Ftaming-master-chapter-83%2F&amp;t_e=Taming%20Master%20Chapter%2083&amp;t_d=Taming%20Master%20Chapter%2083&amp;t_t=Taming%20Master%20Chapter%2083&amp;s_o=default#version=dada105c7d77e39822242c0ceb7f6732" horizontalscrolling="no" verticalscrolling="no" width="100%" frameborder="0"></iframe><iframe id="indicator-north" name="indicator-north" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1112px !important; border: medium none !important; overflow: hidden !important; top: 0px !important; min-width: 1112px !important; max-width: 1112px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;" frameborder="0"></iframe><iframe id="indicator-south" name="indicator-south" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1112px !important; border: medium none !important; overflow: hidden !important; bottom: 0px !important; min-width: 1112px !important; max-width: 1112px !important; position: fixed !important; z-index: 2147483646 !important; height: 29px !important; min-height: 29px !important; max-height: 29px !important; display: none !important;" frameborder="0"></iframe></div><div id="disqus_recommendations" style="margin-top: 12px;"><iframe id="dsq-app4296" name="dsq-app4296" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 100% !important; border: medium none !important; overflow: hidden !important; height: 0px !important; display: inline !important; box-sizing: border-box !important;" src="https://disqus.com/recommendations/?base=default&amp;f=asurascans-com-1&amp;t_u=https%3A%2F%2Fasura.gg%2Ftaming-master-chapter-83%2F&amp;t_d=Taming%20Master%20Chapter%2083&amp;t_t=Taming%20Master%20Chapter%2083#version=45d803678709df462a062a65814e3d01" horizontalscrolling="no" verticalscrolling="no" width="100%" frameborder="0"></iframe></div>
-                            <!-- pipDisqus -->
-                            <script defer="">
-                            var disqus_config = function () {
-                                this.page.url = "https://asura.gg/taming-master-chapter-83/";
-                                this.page.identifier = "152640 https://asura.gg/?p=152640";
-                                this.page.title = "Komik Banana Chapter 01";
-                            };
-	(function() {
-		var d = document, s = d.createElement('script');
-		s.src = 'https://asurascans-com-1.disqus.com/embed.js';
-		s.defer = 'defer';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view comments powered by Disqus.</noscript>
-</div>				<div class="ai-viewport-1 ai-viewport-2" data-insertion-position="prepend" data-selector=".ai-insert-19-52483254" data-insertion-no-dbg="" data-code="PGRpdiBjbGFzcz0nY29kZS1ibG9jayBjb2RlLWJsb2NrLTE5JyBzdHlsZT0nbWFyZ2luOiA4cHggYXV0bzsgdGV4dC1hbGlnbjogY2VudGVyOyBkaXNwbGF5OiBibG9jazsgY2xlYXI6IGJvdGg7Jz4KPCEtLSBEZXNrdG9wLCBUYWJsZXQgLy8gRW5kIG9mIGNoYXB0ZXIgLS0+Cgo8ZGl2IGRhdGEtcHctZGVzaz0ibWVkX3JlY3RfYnRmIj4KPC9kaXY+PC9kaXY+Cg==" data-block="19"><div class="code-block code-block-19" style="margin: 8px auto; text-align: center; display: block; clear: both;">
-<!-- Desktop, Tablet // End of chapter -->
-
-<div data-pw-desk="med_rect_btf">
-</div></div>
-</div>
-
-<div class="ai-viewport-3" data-insertion-position="prepend" data-selector=".ai-insert-20-74186786" data-insertion-no-dbg="" data-code="PGRpdiBjbGFzcz0nY29kZS1ibG9jayBjb2RlLWJsb2NrLTIwJyBzdHlsZT0nbWFyZ2luOiA4cHggYXV0bzsgdGV4dC1hbGlnbjogY2VudGVyOyBkaXNwbGF5OiBibG9jazsgY2xlYXI6IGJvdGg7Jz4KPCEtLSBQaG9uZSAvLyBFbmQgb2YgY2hhcHRlciAtLT4KCjxkaXYgZGF0YS1wdy1tb2JpPSJtZWRfcmVjdF9idGYiPgo8L2Rpdj48L2Rpdj4K" data-block="20"></div>
-
-			</div>
-		
-                        </div>
+                        
+                        
+                        
                     </div>
                 </div>
             </div>
         </div>
+
+        <section id="comments" class="body">
+            <header>
+                <h2>Comments</h2>
+            </header> <br> <br> <br> <br>
+
+            <form action="post_comment.php" method="post" id="commentform">
+
+                <label for="comment_author" class="required">Your name</label>
+                <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+                <label for="comment" class="required">Your message</label>
+                <textarea name="comment" id="comment" rows="5" tabindex="4" required="required"></textarea> <br> <br> 
+
+                <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
+                <input name="submit" type="submit" value="Submit comment">
+                                
+            </form>      
+                <div id="respond"></div>
+                            
+                <ol id="posts-list" class="hfeed<?php echo($has_comments?' has-comments':''); ?>">
+                    <li class="no-comments">Be the first to add a comment.</li>
+                    <?php
+                        foreach ($comments as &$comment) {
+                        ?>
+                        <li>
+                            <article id="comment_<?php echo($comment['id']); ?>" class="hentry">	
+                                    <footer class="post-info">
+                                        <abbr class="published" title="<?php echo($comment['date']); ?>">
+                                            <?php echo( date('d F Y', strtotime($comment['date']) ) ); ?>
+                                        </abbr>
+
+                                        <address class="vcard author">
+                                            By <a class="url fn" href="#"><?php echo($comment['comment_author']); ?></a>
+                                        </address>
+                                    </footer>
+
+                                    <div class="entry-content">
+                                                    <p><?php echo($comment['comment']); ?></p>
+                                    </div>
+                            </article>
+                        </li>
+                    <?php
+                    }
+                    ?>
+                </ol>
+                            
+                                    
+        </section>
     </body>
 </html>
+
+
 <script>
     $(function(){
-      $("#nav-placeholder").load("nav.html");
+        $("#nav-placeholder").load("nav.html");
     });
 </script>
