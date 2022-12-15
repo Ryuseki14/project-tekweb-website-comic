@@ -128,7 +128,7 @@
                 <div class="loop owl-carousel full"></div>
                 <div class="bixbox">
                     <div class="releases">
-                        <h2>Latest Update</h2><a class="vl" href="https://asura.gg/manga/?order=update">View All</a>
+                        <h2>Comic List</h2><a class="vl" href="https://asura.gg/manga/?order=update">View All</a>
                     </div>
                     <div class="listupd">
 
