@@ -120,7 +120,7 @@
         </div>
     </div>
     </div>
-    <div id="content" style="width: 2000;">
+    <div id="content" style="width: 5000;">
 
         <div class="wrapper" style="width: 1500;">
             <div class="postbody">
