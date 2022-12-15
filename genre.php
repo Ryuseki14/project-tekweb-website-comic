@@ -53,7 +53,197 @@
     </head>
     <body>
         <div id="nav-placeholder"></div>
-        
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="c-genres-block archive-page">
+                            <div class="genres_wrap">
+                                <div class="c-blog__heading style-3 font-heading active">
+                                    <h5>Daftar Genre</h5>
+                                </div>
+                                    <div class="row genres">
+                                        <ul class="list-unstyled">
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Action
+                                                </a>
+                                            </li>
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Adventure
+                                                </a>
+                                            </li>
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Comedy
+                                                </a>
+                                            </li>
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Drama
+                                                </a>
+                                            </li>
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Fantasy
+                                                </a>
+                                            </li>
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Romance
+                                                </a>
+                                            </li>
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Sci-fi
+                                                </a>
+                                            </li>
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Slice of Life
+                                                </a>
+                                             </li>
+                                            <li class="col-6 col-sm-4 col-md-2">
+                                                <a href="#">
+                                                    Sports
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-page-content style-1">
+            <div class="content-area">
+                <div class="container">
+                    <div class="row ">
+                        <div class="main-col sidebar-hidden col-md-12 col-sm-12">
+                            <div class="main-col-inner">
+                                <div class="c-page">
+                                    <div class="entry-header">
+                                        <div class="entry-header_wrap">
+                                            <div class="entry-title">
+                                            <h1 class="item-title h4">Daftar Komik</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content-wrap">
+                                        <div role="tabpanel" class="c-tabs-item">
+                                            <div class="page-content-listing item-default">
+                                                <div class="page-listing-item">
+                                                    <div class="row row-eq-height">
+                                                        <div class="col-12 col-md-3 badge-pos-2">
+                                                            <div class="page-item-detail manga">
+                                                                <div class="item-thumb c-image-hover">
+                                                                    <a href="#" Title ="EXAMPLE">
+                                                                        <img src="https://wallpaperaccess.com/full/2040920.jpg" 
+                                                                        srcset="https://wallpaperaccess.com/full/2040920.jpg 110w, https://wallpaperaccess.com/full/2040920.jpg 175w" 
+                                                                        sizes="(max-width: 110px) 100vw, 110px" class="img-responsive" style="" alt="One Punch-Man" width="110" height="150"> 
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item-summary">
+                                                                    <div class="post-title font-title">
+                                                                        <h3 class="h5">
+                                                                            <a href="content_section.php">Komik Banana</a>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="chapter-item ">
+                                                                    <span class="chapter font-meta">
+                                                                    <a href="#" class="btn-link"> Chapter 5 </a>
+                                                                    </span>
+                                                                    <span class="post-on font-meta">
+                                                                        1 hour ago </span>
+                                                                    </div>
+                                                                    <div class="chapter-item ">
+                                                                    <span class="chapter font-meta">
+                                                                    <a href="#" class="btn-link"> Chapter 4 </a>
+                                                                    </span>
+                                                                    <span class="post-on font-meta">
+                                                                        Dec 1, 2022 </span>
+                                                                    </div>
+                                                                </div>
+                                                            
+                                                        </div>
+                                                        <div class="page-item-detail manga">
+                                                                <div class="item-thumb c-image-hover">
+                                                                    <a href="#" Title ="EXAMPLE">
+                                                                        <img src="https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg" 
+                                                                        srcset="https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg 110w, https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg 175w" 
+                                                                        sizes="(max-width: 110px) 100vw, 110px" class="img-responsive" style="" alt="Example" width="110" height="150"> 
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item-summary">
+                                                                    <div class="post-title font-title">
+                                                                        <h3 class="h5">
+                                                                            <a href="content_section.php">EXAMPLE</a>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="chapter-item ">
+                                                                    <span class="chapter font-meta">
+                                                                    <a href="#" class="btn-link"> Chapter 123 </a>
+                                                                    </span>
+                                                                    <span class="post-on font-meta">
+                                                                        2 hour ago </span>
+                                                                    </div>
+                                                                    <div class="chapter-item ">
+                                                                    <span class="chapter font-meta">
+                                                                    <a href="#" class="btn-link"> Chapter 122 </a>
+                                                                    </span>
+                                                                    <span class="post-on font-meta">
+                                                                        1 Week ago </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="page-item-detail manga">
+                                                                <div class="item-thumb c-image-hover">
+                                                                    <a href="#" Title ="EXAMPLE">
+                                                                        <img src="https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg" 
+                                                                        srcset="https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg 110w, https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg 175w" 
+                                                                        sizes="(max-width: 110px) 100vw, 110px" class="img-responsive" style="" alt="EXAMPLE" width="110" height="150"> 
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item-summary">
+                                                                    <div class="post-title font-title">
+                                                                        <h3 class="h5">
+                                                                            <a href="content_section.php">EXAMPLE</a>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="chapter-item ">
+                                                                    <span class="chapter font-meta">
+                                                                    <a href="#" class="btn-link"> Chapter 167 </a>
+                                                                    </span>
+                                                                    <span class="post-on font-meta">
+                                                                        2 hour ago </span>
+                                                                    </div>
+                                                                    <div class="chapter-item ">
+                                                                    <span class="chapter font-meta">
+                                                                    <a href="#" class="btn-link"> Chapter 166 </a>
+                                                                    </span>
+                                                                    <span class="post-on font-meta">
+                                                                        1 Week ago </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="ad c-ads custom-code body-bottom-ads"><div><script async="" type="text/javascript" src="//fermacyupplow.com/taPfp2o4gFXn/58314"></script></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
 <script>
