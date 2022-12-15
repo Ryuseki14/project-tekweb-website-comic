@@ -1,6 +1,8 @@
 <html>
 
 <head>
+
+<head>
     <style class="anchorjs"></style>
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="/docs/5.0/assets/css/docs.css" rel="stylesheet">
