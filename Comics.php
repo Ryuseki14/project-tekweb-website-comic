@@ -75,7 +75,7 @@ $has_comments = (count($comments) > 0);
                     <div class="chnav ctop">
                         <span selector slc 1>
                             <div class="nvx">
-                                <select name="chapter" id="chapter" onchange="this.options[this.selectedIndex].value&amp;&amp;window.open(this.options[this.selectedIndex].value,'_self')">
+                                <select name="chapter" id="chapter" onchange="this.options[this.selectedIndex].value&amp;window.open(this.options[this.selectedIndex].value,'_self')">
                                     <option value="" disabled="disabled">Select Chapter</option>
                                     <option data-id="152640" value="#" selected="selected">Chapter 01 </option>
                                     <option data-id="000002" value="#">Chapter 02 </option>
