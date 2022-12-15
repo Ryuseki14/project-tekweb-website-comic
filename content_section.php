@@ -227,7 +227,7 @@
                             </div>
                             <br>
                             <div id="init-links" class="nav-links">
-                                <a href="#" id="btn-read-last" class="btn btn-primary"> Read First</a>
+                                <a href="Comics.php" id="btn-read-last" class="btn btn-primary"> Read First</a>
                                 <a href="#" id="btn-read-first" class="btn btn-primary">Read Last</a>
                             </div>
                         </div>
@@ -256,7 +256,7 @@
                                 <div class="chbox">
                                     <div class="eph-num">
                                         <a href="#">
-                                            <span class="chapternum">Chapter 3</span>
+                                            <span class="chapternum">Chapter 4</span>
                                             <span class="chapterdate">December 6, 2022</span>
                                         </a>
                                     </div>
@@ -285,7 +285,7 @@
                             <li data-num="1">
                                 <div class="chbox">
                                     <div class="eph-num">
-                                        <a href="#">
+                                        <a href="Comics.php">
                                             <span class="chapternum">Chapter 1</span>
                                             <span class="chapterdate">November 2, 2020</span>
                                         </a>
