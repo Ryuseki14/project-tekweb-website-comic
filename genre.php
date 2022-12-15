@@ -120,9 +120,9 @@
         </div>
     </div>
     </div>
-    <div id="content">
+    <div id="content" style="width: 5000;">
 
-        <div class="wrapper">
+        <div class="wrapper" style="width: 1500;">
             <div class="postbody">
 
                 <div class="loop owl-carousel full"></div>
