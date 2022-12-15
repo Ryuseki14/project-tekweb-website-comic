@@ -231,6 +231,37 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="page-item-detail manga">
+                                                                <div class="item-thumb c-image-hover">
+                                                                    <a href="#" Title ="EXAMPLE">
+                                                                        <img src="https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg" 
+                                                                        srcset="https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg 110w, https://e0.pxfuel.com/wallpapers/485/585/desktop-wallpaper-twice-more-and-more-twice-portrait.jpg 175w" 
+                                                                        sizes="(max-width: 110px) 100vw, 110px" class="img-responsive" style="" alt="EXAMPLE" width="110" height="150"> 
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item-summary">
+                                                                    <div class="post-title font-title">
+                                                                        <h3 class="h5">
+                                                                            <a href="content_section.php">EXAMPLE</a>
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div class="chapter-item ">
+                                                                    <span class="chapter font-meta">
+                                                                    <a href="#" class="btn-link"> Chapter 167 </a>
+                                                                    </span>
+                                                                    <span class="post-on font-meta">
+                                                                        2 hour ago </span>
+                                                                    </div>
+                                                                    <div class="chapter-item ">
+                                                                    <span class="chapter font-meta">
+                                                                    <a href="#" class="btn-link"> Chapter 166 </a>
+                                                                    </span>
+                                                                    <span class="post-on font-meta">
+                                                                        1 Week ago </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
