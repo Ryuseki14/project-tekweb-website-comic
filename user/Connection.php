@@ -3,7 +3,7 @@
     $port='3306';
     $username='root';
     $password='';
-    $dbname='user';
+    $dbname='komiktekweb';
 
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

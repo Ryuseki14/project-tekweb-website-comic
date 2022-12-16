@@ -135,14 +135,14 @@
                             <div class="utao styletwo">
                                 <div class="uta">
                                     <div class="imgu">
-                                        <a rel="109196" class="series" href="#" title="EXAMPLE">
+                                        <a rel="109196" class="series" href="#" title="Komik Banana">
                                             <img src="https://wallpaperaccess.com/full/2040920.jpg" class="ts-post-image wp-post-image attachment-post-thumbnail size-post-thumbnail" loading="lazy" />
                                             <span class="hot">H</span>
                                         </a>
                                     </div>
                                     <div class="luf">
-                                        <a class="series" href="#" title="EXAMPLE">
-                                            <h4>EXAMPLE</h4>
+                                        <a class="series" href="comics.php" title="EXAMPLE">
+                                            <h4>Komik Banana</h4>
                                         </a>
                                         <ul class="Manhwa">
                                             <li><a href="#">Chapter 42</a><span>4 days ago</span></li>

@@ -1,7 +1,7 @@
 <?php
     require "connection.php";
     $response = '';
-    $qkategori = "select * from login where username = '" . $_POST['username'] . "'";
+    $qkategori = "select * from user where username = '" . $_POST['username'] . "'";
     $stmt = $conn->query($qkategori);
     foreach($stmt->fetchAll() as $row)
     {
