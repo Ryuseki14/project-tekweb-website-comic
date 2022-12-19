@@ -1,7 +1,5 @@
 <?php
-require connection.php
-$sql = "INSERT INTO komentar (Nama, Date, Komentar) VALUES ('".$Nama."' , '".$tgl."' , '".$Komentar."')";
-$conn->exec($sql);
+
 
 date_default_timezone_set('UTC');
 
