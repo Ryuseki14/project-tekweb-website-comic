@@ -1,14 +1,8 @@
 <?php
-    $servername='localhost';
-    $port='3306';
-    $username='root';
-    $password='';
-    $dbname='komiktekweb';
+    $con = mysqli_connect("localhost","root","","komiktekweb");
 
-    try {
-        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch(PDOException $e) {
-        echo "Connection failed: " . $e->getMessage();
-    }     
+    if(mysqli_connect_errno()){
+        echo "failed to connect to MySQL" . mysqli_connect_error();
+        exit();
+    }
 ?>

@@ -1,14 +1,55 @@
 <?php
+    session_start();
     require "connection.php";
-    $response = '';
-    $qkategori = "select * from user where username = '" . $_POST['username'] . "'";
-    $stmt = $conn->query($qkategori);
-    foreach($stmt->fetchAll() as $row)
-    {
-        $response .= "<tr>";
-        $response .= "<td>" . $row['Password'] . "</td>";
-        $response .= "</tr>";
-    }
-
-    echo $response;
 ?>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <form>
+                <label>Email : </label><br>
+                <input type="text"><br>
+                <label>Password : </label><br>
+                <input type="password"><br>
+                <button type="submit" name="submit" class="btn-input">Login</button>
+                <p> Belum punya akun?
+                    <a href="register.php">Register di sini</a>
+                </p>
+            </form>
+
+            <?php
+                if(isset($_POST['submit'])){
+                    $Email = $_POST['Email'];
+                    $Password = $_POST['Password'];
+
+                    $query = mysqli_query($con, "SELECT * FROM user WHERE Email='$Email'");
+                    $count = mysqli_num_rows($query);
+
+                    if($count > 0){
+                        $data = mysqli_fetch_array($query);
+                        if(password_verify($Password, $data['Password'])){
+                            $_SESSION['logged_in'] = true;
+                            $_SESSION['Email'] = $data['Email'];
+
+                            header("location: index.php");
+                        }
+                        else{
+                            echo "Wrong email or password, Please Try Again";
+                        }
+                    }
+                    else{
+                        echo "Account";
+                    }
+                }
+                ?>
+        </div>
+    </body>
+
+</html>
