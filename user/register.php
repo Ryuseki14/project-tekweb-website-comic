@@ -1,6 +1,5 @@
 <?php
-    require 'connection.php';
-
+    require 'Connection.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,10 +43,12 @@
                 $count = mysqli_num_rows($query);
 
                 if($count > 0){
-                    echo "Cannot register. Already Existed";
+                    echo "<br>Cannot register. Already Existed";
                 }
                 else{
                     $queryInsert = mysqli_query($con, "INSERT INTO user (Username, email, password) VALUES ('$Username','$email', '$password')");
+
+                    header("location: login.php");
                 }
             }
         ?>

@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-
-=======
->>>>>>> e29ceccf63b7d32a50b15d9787f7b5d83fef812b
 
 date_default_timezone_set('UTC');
 
