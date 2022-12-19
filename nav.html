@@ -431,7 +431,7 @@
                     <form action="Home.html" id="form" method="get" itemprop="potentialAction" itemscope
                         itemtype="http://schema.org/SearchAction">
                         <meta itemprop="target" content="">
-                        <input id="s" itemprop="query-input" class="search-live live-search_focused live-search_focused"
+                        <input id="myInput" onkeyup="myFunction()" itemprop="query-input" class="search-live live-search_focused live-search_focused"
                             type="text" placeholder="Search" name="s" autocomplete="off">
                         <button type="submit" id="submit">
                             <i class="fas fa-search" aria-hidden="true">
@@ -507,3 +507,26 @@
 </body>
 
 </html>
+
+
+<script>
+    function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  con = document.getElementById("content");
+  li = con.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
