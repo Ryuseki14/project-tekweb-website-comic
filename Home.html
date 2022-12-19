@@ -43,13 +43,9 @@
         href='https://asura.gg/wp-content/themes/mangastream/assets/css/owl.carousel.css?ver=1.0.0' type='text/css'
         media='all' />
     <script>
-        var baseurl = "https://asura.gg/";
-        var ajaxurl = "https://asura.gg/wp-admin/admin-ajax.php";
         var max_bookmark = 200;
         var max_history = 10;
         var defaultTheme = "darkmode";
-        var tsLogoLight = "https://www.asurascans.com/wp-content/uploads/2021/03/Group_1.png";
-        var tsLogoDark = "https://www.asurascans.com/wp-content/uploads/2021/03/Group_1.png";
     </script>
     <script type='text/javascript' src='jquery.js' id='jquery-js'></script>
     <script type='text/javascript' src='bookmark.js' id='bookmarks_script-js'></script>
@@ -61,19 +57,6 @@
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://asura.gg/wp-includes/wlwmanifest.xml" />
     <meta name="generator" content="WordPress 6.1.1" />
 
-    <script>
-        function fDisqus() {
-            let disqus = document.querySelectorAll('#disqus_thread iframe')
-            console.log('Trying to remove disqus ads.')
-            disqus.forEach(ads => {
-                if (ads.id.includes('dsq') && ads.getAttribute('src') == undefined) {
-                    ads.style.display = 'none'
-                    window.clearInterval(fDisqusInterval)
-                }
-            })
-        }
-        fDisqusInterval = setInterval(fDisqus, 690)
-    </script>
 
     <style>
         #main-menu,
@@ -367,24 +350,6 @@
     </style>
 
     <script>
-        window._pwGA4PageviewId = ''.concat(Date.now());
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = window.gtag || function () {
-            dataLayer.push(arguments);
-        };
-        gtag('js', new Date());
-        gtag('config', 'G-BMYVCJBBGE', { 'send_page_view': false });
-        gtag(
-            'event',
-            'ramp_js',
-            {
-                'send_to': 'G-BMYVCJBBGE',
-                'pageview_id': window._pwGA4PageviewId
-            }
-        );
-    </script>
-
-    <script>
         $(document).ready(function () {
             $(".shme").click(function () {
                 $(".mm").toggleClass("shwx");
@@ -411,7 +376,7 @@
                 <div class="loop owl-carousel full"></div>
                 <div class="bixbox">
                     <div class="releases">
-                        <h2>Comic List</h2><a class="vl" href="https://asura.gg/manga/?order=update">View All</a>
+                        <h2>Comic List</h2>
                     </div>
                     <div class="listupd">
 
@@ -615,7 +580,7 @@
                         </div>
 
                         <div class="hpage">
-                            <a href="https://asura.gg/page/2" class="r">Next <i class="fa fa-chevron-right"
+                            <a href="#" class="r">Next <i class="fa fa-chevron-right"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>

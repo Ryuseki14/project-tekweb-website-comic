@@ -137,19 +137,19 @@
                         <div class="utao styletwo">
                             <div class="uta">
                                 <div class="imgu">
-                                    <a rel="109196" class="series" href="#" title="EXAMPLE">
+                                    <a rel="109196" class="series" href="content_section.php" title="Komik Banana">
                                         <img src="https://wallpaperaccess.com/full/2040920.jpg" class="ts-post-image wp-post-image attachment-post-thumbnail size-post-thumbnail" loading="lazy" />
                                         <span class="hot">H</span>
                                     </a>
                                 </div>
                                 <div class="luf">
-                                    <a class="series" href="#" title="EXAMPLE">
-                                        <h4>EXAMPLE</h4>
+                                    <a class="series" href="content_section.php" title="EXAMPLE">
+                                        <h4>Komik Banana</h4>
                                     </a>
                                     <ul class="Manhwa">
-                                        <li><a href="#">Chapter 42</a><span>4 days ago</span></li>
-                                        <li><a href="#">Chapter 41</a><span>2 weeks ago</span></li>
-                                        <li><a href="#">Chapter 40</a><span>2 weeks ago</span></li>
+                                        <li><a href="#">Chapter 3</a><span>4 days ago</span></li>
+                                        <li><a href="#">Chapter 2</a><span>2 weeks ago</span></li>
+                                        <li><a href="Comics.php">Chapter 1</a><span>2 weeks ago</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -175,26 +175,6 @@
                             </div>
                         </div>
 
-<<<<<<< HEAD
-                            <div class="utao styletwo">
-                                <div class="uta">
-                                    <div class="imgu">
-                                        <a rel="109196" class="series" href="#" title="Komik Banana">
-                                            <img src="https://wallpaperaccess.com/full/2040920.jpg" class="ts-post-image wp-post-image attachment-post-thumbnail size-post-thumbnail" loading="lazy" />
-                                            <span class="hot">H</span>
-                                        </a>
-                                    </div>
-                                    <div class="luf">
-                                        <a class="series" href="comics.php" title="EXAMPLE">
-                                            <h4>Komik Banana</h4>
-                                        </a>
-                                        <ul class="Manhwa">
-                                            <li><a href="#">Chapter 42</a><span>4 days ago</span></li>
-                                            <li><a href="#">Chapter 41</a><span>2 weeks ago</span></li>
-                                            <li><a href="#">Chapter 40</a><span>2 weeks ago</span></li>
-                                        </ul>
-                                    </div>
-=======
                         <div class="utao styletwo">
                             <div class="uta">
                                 <div class="imgu">
@@ -212,7 +192,6 @@
                                         <li><a href="#">Chapter 41</a><span>2 weeks ago</span></li>
                                         <li><a href="#">Chapter 40</a><span>2 weeks ago</span></li>
                                     </ul>
->>>>>>> 60597dce692b3cc3167db7d537aa995ea0757274
                                 </div>
                             </div>
                         </div>
