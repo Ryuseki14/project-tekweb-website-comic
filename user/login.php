@@ -5,8 +5,8 @@
      
     session_start();
      
-    
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -44,8 +44,12 @@
                         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
                     }
                 }
-                ?>
-        </div>
-    </body>
+            } else {
+                echo "Account";
+            }
+        }
+        ?>
+    </div>
+</body>
 
 </html>

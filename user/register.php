@@ -3,8 +3,6 @@
     error_reporting(0);
     
     session_start();
-    
-    
 
 ?>
 <!DOCTYPE html>
@@ -69,6 +67,8 @@
                      
                 } else {
                     echo "<script>alert('Password Tidak Sesuai')</script>";
+
+            
                 }
                 header("location: user/login.php");
             }
