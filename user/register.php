@@ -40,7 +40,7 @@
                 $password = $_POST['Password'];
                 $encryptedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-                $query = mysqli_query($con, "SELECT email FROM user WHere email='$email'");
+                $query = mysqli_query($con, "SELECT email FROM user WHERE email='$email'");
                 $count = mysqli_num_rows($query);
 
                 if($count > 0){
