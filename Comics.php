@@ -1,9 +1,6 @@
 <?php
 require('Persistence.php');
 $comment_post_ID = 1;
-$db = new Persistence();
-$comments = $db->get_comments($comment_post_ID);
-$has_comments = (count($comments) > 0);
 ?>
 
 <html>
@@ -60,6 +57,7 @@ $has_comments = (count($comments) > 0);
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://asura.gg/wp-includes/wlwmanifest.xml" />
     <meta name="generator" content="WordPress 6.1.1" />
 </head>
+
 
 <body>
     <div id="nav-placeholder"></div>
