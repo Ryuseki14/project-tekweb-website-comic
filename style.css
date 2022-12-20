@@ -1,45 +1,47 @@
-.clear{
-  clear :both;
+.clear {
+  clear: both;
   opacity: 0.5;
 }
-#main-menu{
-  background: rgba(28,28,28,0.95);
+
+#main-menu {
+  background: rgba(28, 28, 28, 0.95);
 }
-body{
-  background:#16151d;
-  font-size:14px;
-  line-height:1.5;
-  color:#b8b8b8;
-  margin:0 auto;
-  font-family:fira sans,sans-serif;
-  -webkit-font-smoothing:antialiased!important;
-  -moz-osx-font-smoothing:grayscale!important
+
+body {
+  background: #16151d;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #b8b8b8;
+  margin: 0 auto;
+  font-family: fira sans, sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important
 }
 
 #main-menu .centernav {
-    margin: 0 auto;
-    max-width: 1220px;
-    padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 20px;
 }
 
-.register{
-    float: right;
-    margin-top: 7px;
-    background: rgba(0,0,0,.32);
-    color: #fff;
-    font-size: 12px;
-    margin-right: 10px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    padding: 5px 10px;
-    line-height: 1.5;
-}
-
-.Login{
+.register {
   float: right;
   margin-top: 7px;
-  background: rgba(0,0,0,.32);
+  background: rgba(0, 0, 0, .32);
+  color: #fff;
+  font-size: 12px;
+  margin-right: 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  padding: 5px 10px;
+  line-height: 1.5;
+}
+
+.Login {
+  float: right;
+  margin-top: 7px;
+  background: rgba(0, 0, 0, .32);
   color: #fff;
   font-size: 12px;
   margin-right: 10px;
@@ -53,13 +55,224 @@ body{
 #init-links .c-btn.c-btn_style-1 {
   padding: 10px;
   margin: 5px;
-  color: #fff;
+  color: #fff;
 }
 
 #init-links .c-btn.c-btn_style-1:first-child {
-  margin-left: 0;
+  margin-left: 0;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-  background-color: hsl(166, 92%, 41%) !important;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: hsl(166, 92%, 41%) !important;
+}
+
+#main-menu,
+.slider:before,
+.serieslist.pop ul li.topone .limit .bw .ctr,
+.releases .vl,
+.scrollToTop,
+#sidebar #bm-history li a:hover,
+.hpage a,
+#footer .footermenu,
+.footer-az .az-list li a,
+.bigcontent .infox .spe span:before,
+.bxcl ul li span.dt a,
+.bookmark,
+.commentx #submit,
+.bs .bsx .limit .type,
+.radiox input:checked~.checkmarkx,
+.advancedsearch button.searchz,
+.lightmode .nav_apb a:hover,
+.lista a,
+.lightmode .lista a:hover,
+.nextprev a,
+.disqusmen #commentform #submit,
+.blogbox .btitle .vl,
+.bigblogt span a {
+  background: hsl(166, 92%, 41%)
+}
+
+.pagination span.page-numbers.current,
+.quickfilter .filters .filter.submit button,
+#sidebar .section .ts-wpop-series-gen .ts-wpop-nav-tabs li.active a,
+#gallery.owl-loaded .owl-dots .owl-dot.active span {
+  background: hsl(166, 92%, 41%) !important
+}
+
+#sidebar .section #searchform #searchsubmit,
+.series-gen .nav-tabs li.active a,
+.lastend .inepcx a,
+.nav_apb a:hover,
+#top-menu li a:hover,
+.readingnav.rnavbot .readingnavbot .readingbar .readingprogress,
+.lightmode .bigcontent .infox .wd-full .mgen a:hover,
+.lightmode .bxcl ul li .chbox:hover,
+.lightmode ul.taxindex li a:hover,
+.comment-list .comment-body .reply a:hover,
+.topmobile,
+.bxcl ul::-webkit-scrollbar-thumb,
+.lightmode .slider:before,
+.quickfilter .filters .filter .genrez::-webkit-scrollbar-thumb {
+  background: hsl(166, 92%, 41%)
+}
+
+.lightmode #sidebar .section h4,
+.lightmode .serieslist ul li .ctr,
+.listupd .utao .uta .luf ul li,
+.lightmode .bs .bsx:hover .tt,
+.soralist ul,
+a:hover,
+.lightmode .blogbox .btitle h3,
+.lightmode .blogbox .btitle h1,
+.bxcl ul li .lchx a:visited,
+.listupd .utao .uta .luf ul li a:visited,
+.lightmode .pagination a:hover,
+.lightmode a:hover,
+#sidebar .serieslist ul li .leftseries h2 a:hover,
+.bs.styletere .epxs,
+.bxcl ul li .dt a,
+.lightmode .bigcontent .infox .wd-full .mgen a,
+.lightmode #sidebar .serieslist ul li .leftseries h2 a:hover,
+.comment-list .comment-body .reply a,
+.bxcl ul li .eph-num a:visited,
+.headpost .allc a {
+  color: hsl(166, 92%, 41%)
+}
+
+.bxcl ul li .lchx a:visited,
+.listupd .utao .uta .luf ul li a:visited {
+  color: hsl(166, 92%, 41%) !important
+}
+
+.lightmode .serieslist ul li .ctr,
+.advancedsearch button.searchz,
+.lista a,
+.lightmode .lista a:hover,
+.blogbox .boxlist .bma .bmb .bmba,
+.page.blog .thumb,
+#sidebar .section #searchform #searchsubmit,
+.lightmode .bigcontent .infox .wd-full .mgen a,
+.lightmode .bxcl ul li .chbox:hover,
+.comment-list .comment-body .reply a {
+  border-color: hsl(166, 92%, 41%)
+}
+
+.hpage a:hover {
+  color: #FFF !important;
+}
+
+@media only screen and (max-width:800px) {
+
+  .lightmode.black .th,
+  .lightmode .th,
+  .th,
+  .surprise {
+    background: hsl(166, 92%, 41%)
+  }
+
+  #main-menu {
+    background: rgba(28, 28, 28, 0.95);
+  }
+}
+
+
+
+
+#sidebar {
+  z-index: unset;
+}
+
+@media only screen and (max-width: 800px) {
+  #readerarea.rdminimal {
+    margin: 00px 00px;
+  }
+}
+
+.status.Completed {
+  background-color: green !important;
+}
+
+#content {
+  background: transparent !important;
+}
+
+/* For search bar right align */
+.th .searchx {
+  transform: translatex(142.0%);
+}
+
+@media screen and (max-width: 1200px) {
+  .th .searchx {
+    transform: translatex(100%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .th .searchx {
+    transform: unset;
+  }
+}
+
+/* For subscription css */
+.page iframe {
+  min-height: unset;
+}
+
+.rcp-table {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.rcp-table td {
+  text-align: center;
+}
+
+p#rcp_submit_wrap {
+  display: grid;
+  justify-content: center;
+}
+
+input[name="rcp_submit_registration"] {
+  padding: 6px 12px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: #9b51e0;
+  color: white;
+}
+
+/* Decrease width of adfree */
+@media screen and (max-width: 600px) {
+  .code-block-25 {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .th .centernav.bound header {
+    display: initial !important;
+    margin: 5px 10px 5px 0 !important;
+  }
+
+  .th .centernav.bound header .logox {
+    max-width: 40px !important;
+  }
+
+  .th .centernav.bound header .logox span {
+    max-width: 40px !important;
+  }
+
+  .th .centernav.bound .searchx {
+    transform: translatex(20%);
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .th .centernav.bound .searchx {
+    transform: unset;
+  }
 }

@@ -1,10 +1,6 @@
 <html>
 
 <head>
-    <style class="anchorjs"></style>
-    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="/docs/5.0/assets/css/docs.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -12,69 +8,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 0.07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
     </link>
-    <link rel='stylesheet' id='google-fonts-css'
-        href='https://fonts.googleapis.com/css?family=Lato%3A400%2C500%2C600%2C700%7CPoppins%3A400%2C500%2C600%2C700&#038;ver=2.6.1'
-        type='text/css' media='all' />
+    
     <link rel='stylesheet' id='style-css' href='https://asura.gg/wp-content/themes/mangastream/style.css?ver=1.1.4'
         type='text/css' media='all' />
     <link rel='stylesheet' id='lightstyle-css'
         href='https://asura.gg/wp-content/themes/mangastream/assets/css/lightmode.css?ver=1.1.4' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='fontawesome-css'
-        href='https://asura.gg/wp-content/themes/mangastream/assets/css/font-awesome.min.css?ver=5.13.0' type='text/css'
-        media='all' />
+    
     <link rel='stylesheet' id='owl-carousel-css'
         href='https://asura.gg/wp-content/themes/mangastream/assets/css/owl.carousel.css?ver=1.0.0' type='text/css'
         media='all' />
     <script>
-        var baseurl = "https://asura.gg/";
-        var ajaxurl = "https://asura.gg/wp-admin/admin-ajax.php";
+        
         var max_bookmark = 200;
         var max_history = 10;
         var defaultTheme = "darkmode";
-        var tsLogoLight = "https://www.asurascans.com/wp-content/uploads/2021/03/Group_1.png";
-        var tsLogoDark = "https://www.asurascans.com/wp-content/uploads/2021/03/Group_1.png";
+        var tsLogoLight = "https://i.pinimg.com/originals/f5/05/24/f50524ee5f161f437400aaf215c9e12f.jpg";
+        var tsLogoDark = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScanpz1x7hKWvtxDfb_RjPMTcl-Emmqnd5Yg&usqp=CAU";
     </script>
     <script type='text/javascript' src='jquery.js' id='jquery-js'></script>
     <script type='text/javascript' src='bookmark.js' id='bookmarks_script-js'></script>
     <script type='text/javascript' src='history.js' id='history_script-js'></script>
     <script type='text/javascript' src='function.js' id='tsfn_scripts-js'></script>
     <script type='text/javascript' src='carousel.js' id='owl-carousel-js'></script>
-    <link rel="https://api.w.org/" href="https://asura.gg/wp-json/" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://asura.gg/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://asura.gg/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 6.1.1" />
 
+    
     <script>
-        function fDisqus() {
-            let disqus = document.querySelectorAll('#disqus_thread iframe')
-            console.log('Trying to remove disqus ads.')
-            disqus.forEach(ads => {
-                if (ads.id.includes('dsq') && ads.getAttribute('src') == undefined) {
-                    ads.style.display = 'none'
-                    window.clearInterval(fDisqusInterval)
-                }
-            })
-        }
-        fDisqusInterval = setInterval(fDisqus, 690)
+        $(document).ready(function(){
+		$(".shme").click(function(){
+			$(".mm").toggleClass("shwx");
+		});
+		$(".topmobile").click(function(){
+			$(".topmobcon").toggleClass("topmobshow");
+		});
+	});
     </script>
-
     <style>
         #main-menu,
         .slider:before,
@@ -186,216 +156,6 @@
         }
     </style>
 
-    <style type="text/css" id="wp-custom-css">
-        /* Remove z-index from sidebar */
-        #sidebar {
-            z-index: unset;
-        }
-
-        /* For fullscreen chap reader */
-        @media only screen and (max-width: 800px) {
-            #readerarea.rdminimal {
-                margin: 00px 00px;
-            }
-        }
-
-        .status.Completed {
-            background-color: green !important;
-        }
-
-        #content {
-            background: transparent !important;
-        }
-
-        /* For search bar right align */
-        .th .searchx {
-            transform: translatex(142.0%);
-        }
-
-        @media screen and (max-width: 1200px) {
-            .th .searchx {
-                transform: translatex(100%);
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-            .th .searchx {
-                transform: unset;
-            }
-        }
-
-        /* For subscription css */
-        .page iframe {
-            min-height: unset;
-        }
-
-        .rcp-table {
-            width: 100%;
-            margin-bottom: 50px;
-        }
-
-        .rcp-table td {
-            text-align: center;
-        }
-
-        p#rcp_submit_wrap {
-            display: grid;
-            justify-content: center;
-        }
-
-        input[name="rcp_submit_registration"] {
-            padding: 6px 12px;
-            border-radius: 10px;
-            outline: none;
-            border: none;
-            background: #9b51e0;
-            color: white;
-        }
-
-        /* Decrease width of adfree */
-        @media screen and (max-width: 600px) {
-            .code-block-25 {
-                width: 80% !important;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-            .th .centernav.bound header {
-                display: initial !important;
-                margin: 5px 10px 5px 0 !important;
-            }
-
-            .th .centernav.bound header .logox {
-                max-width: 40px !important;
-            }
-
-            .th .centernav.bound header .logox span {
-                max-width: 40px !important;
-            }
-
-            .th .centernav.bound .searchx {
-                transform: translatex(20%);
-                width: 50% !important;
-            }
-        }
-
-        @media screen and (max-width: 450px) {
-            .th .centernav.bound .searchx {
-                transform: unset;
-            }
-        }
-    </style>
-    <style>
-        .ai-viewports {
-            --ai: 1;
-        }
-
-        .ai-viewport-3 {
-            display: none !important;
-        }
-
-        .ai-viewport-2 {
-            display: none !important;
-        }
-
-        .ai-viewport-1 {
-            display: inherit !important;
-        }
-
-        .ai-viewport-0 {
-            display: none !important;
-        }
-
-        @media (min-width: 768px) and (max-width: 979px) {
-            .ai-viewport-1 {
-                display: none !important;
-            }
-
-            .ai-viewport-2 {
-                display: inherit !important;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .ai-viewport-1 {
-                display: none !important;
-            }
-
-            .ai-viewport-3 {
-                display: inherit !important;
-            }
-        }
-
-        .ai-rotate {
-            position: relative;
-        }
-
-        .ai-rotate-hidden {
-            visibility: hidden;
-        }
-
-        .ai-rotate-hidden-2 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .ai-list-data,
-        .ai-ip-data,
-        .ai-filter-check,
-        .ai-fallback,
-        .ai-list-block,
-        .ai-list-block-ip,
-        .ai-list-block-filter {
-            visibility: hidden;
-            position: absolute;
-            width: 50%;
-            height: 1px;
-            top: -1000px;
-            z-index: -9999;
-            margin: 0px !important;
-        }
-
-        .ai-list-data,
-        .ai-ip-data,
-        .ai-filter-check,
-        .ai-fallback {
-            min-width: 1px;
-        }
-    </style>
-
-    <script>
-        window._pwGA4PageviewId = ''.concat(Date.now());
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = window.gtag || function () {
-            dataLayer.push(arguments);
-        };
-        gtag('js', new Date());
-        gtag('config', 'G-BMYVCJBBGE', { 'send_page_view': false });
-        gtag(
-            'event',
-            'ramp_js',
-            {
-                'send_to': 'G-BMYVCJBBGE',
-                'pageview_id': window._pwGA4PageviewId
-            }
-        );
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $(".shme").click(function () {
-                $(".mm").toggleClass("shwx");
-            });
-            $(".topmobile").click(function () {
-                $(".topmobcon").toggleClass("topmobshow");
-            });
-        });
-    </script>
-    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3979769194574777"
-        crossorigin="anonymous" data-checked-head="true"></script>
 
 
 </head>
