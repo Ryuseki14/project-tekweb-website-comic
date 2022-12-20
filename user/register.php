@@ -1,5 +1,10 @@
 <?php
     require 'connection.php';
+    error_reporting(0);
+    
+    session_start();
+    
+    
 
 ?>
 <!DOCTYPE html>
@@ -26,6 +31,8 @@
             <br>
             <input type="password" name="Password" id="password" placeholder="Password">
             <br>
+            <input type="cpassword" name="CPassword" id="cpassword" placeholder="Confirm Password">
+            <br>
             <a href="login.php">
                 <button type="submit" name="submit" class="btn-input">Register</button>
             </a>
@@ -34,21 +41,36 @@
             </p>
         </form>
         <?php
-            if(isset($_POST['submit'])){
-                $Username = $_POST['Username'];
-                $email = $_POST['Email'];
-                $password = $_POST['Password'];
-                $encryptedPassword = password_hash($password, PASSWORD_DEFAULT);
-
-                $query = mysqli_query($con, "SELECT email FROM user WHERE email='$email'");
-                $count = mysqli_num_rows($query);
-
-                if($count > 0){
-                    echo "Cannot register. Already Existed";
+            if (isset($_POST['submit'])) {
+                $username = $_POST['username'];
+                $email = $_POST['email'];
+                $password = md5($_POST['password']);
+                $cpassword = md5($_POST['cpassword']);
+             
+                if ($password == $cpassword) {
+                    $sql = "SELECT * FROM users WHERE email='$email'";
+                    $result = mysqli_query($conn, $sql);
+                    if (!$result->num_rows > 0) {
+                        $sql = "INSERT INTO users (username, email, password)
+                                VALUES ('$username', '$email', '$password')";
+                        $result = mysqli_query($conn, $sql);
+                        if ($result) {
+                            echo "<script>alert('Selamat, registrasi berhasil!')</script>";
+                            $username = "";
+                            $email = "";
+                            $_POST['password'] = "";
+                            $_POST['cpassword'] = "";
+                        } else {
+                            echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
+                        }
+                    } else {
+                        echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
+                    }
+                     
+                } else {
+                    echo "<script>alert('Password Tidak Sesuai')</script>";
                 }
-                else{
-                    $queryInsert = mysqli_query($con, "INSERT INTO user (Username, email, password) VALUES ('$Username','$email', '$password')");
-                }
+                header("location: user/login.php");
             }
         ?>
     </div>
