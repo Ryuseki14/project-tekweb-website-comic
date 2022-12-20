@@ -1,8 +1,12 @@
-<?php
-    $con = mysqli_connect("localhost","root","","komiktekweb");
-
-    if(mysqli_connect_errno()){
-        echo "failed to connect to MySQL" . mysqli_connect_error();
-        exit();
-    }
+<?php 
+ 
+$server = "localhost";
+$user = "root";
+$pass = "";
+$database = "komiktekweb";
+$conn = mysqli_connect($server, $user, $pass, $database);
+if (!$conn) 
+{
+    die("<script>alert('Gagal tersambung dengan database.')</script>");
+}
 ?>
