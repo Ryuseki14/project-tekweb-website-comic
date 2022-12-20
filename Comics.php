@@ -1,5 +1,6 @@
 <?php
 require('Persistence.php');
+require('Connection.php');
 $comment_post_ID = 1;
 $db = new Persistence();
 $comments = $db->get_comments($comment_post_ID);
@@ -68,9 +69,14 @@ $has_comments = (count($comments) > 0);
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12">
                     <br>
-                    <div class="post-title">
+                    <div class="post-title" id="1">
                         <h1>Komik Banana Chapter 01</h1>
                     </div>
+                    <?php
+                        $id = $_POST['post-title'];
+                        $id = $_POST['post-title'];
+
+                    ?>
                     <br>
                     <div class="chnav ctop">
                         <span selector slc 1>
