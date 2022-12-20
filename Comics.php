@@ -58,30 +58,7 @@ $comment_post_ID = 1;
     <meta name="generator" content="WordPress 6.1.1" />
 </head>
 
-    <body>
-        <div id="nav-placeholder"></div>
-        <div class="bixbox anime full">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <br>
-                        <div class="post-title" id="1">
-                            <h1>Komik Banana Chapter 01</h1>
-                        </div>
-                        <br>
-                        <div class="chnav ctop">
-                            <span selector slc 1>
-                                <div class="nvx">
-                                    <select name="chapter" id="chapter" onchange="this.options[this.selectedIndex].value&amp;window.open(this.options[this.selectedIndex].value,'_self')">
-                                        <option value="" disabled="disabled">Select Chapter</option>
-                                        <option data-id="152640" value="#" selected="selected">Chapter 01 </option>
-                                        <option data-id="000002" value="#">Chapter 02 </option>
-                                        <option data-id="000003" value="#">Chapter 03 </option>
-                                        <option data-id="000004" value="#">Chapter 04 </option>
-                                    </select>
-                                </div>
-                            </span>
-                            <span class="navleft">
+
 <body>
     <div id="nav-placeholder"></div>
     <div class="bixbox anime full">
