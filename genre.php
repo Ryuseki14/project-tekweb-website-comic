@@ -45,22 +45,22 @@
                             <div class="row genres">
                                 <ul class="list-unstyled">
                                     <li class="col-6 col-sm-4 col-md-2">
-                                        <a href="#">
+                                        <a href="genre/action.php">
                                             Action
                                         </a>
                                     </li>
                                     <li class="col-6 col-sm-4 col-md-2">
-                                        <a href="#">
+                                        <a href="genre/advanture.php">
                                             Adventure
                                         </a>
                                     </li>
                                     <li class="col-6 col-sm-4 col-md-2">
-                                        <a href="#">
+                                        <a href="genre/comedy.php">
                                             Comedy
                                         </a>
                                     </li>
                                     <li class="col-6 col-sm-4 col-md-2">
-                                        <a href="#">
+                                        <a href="genre/drama.php">
                                             Drama
                                         </a>
                                     </li>
@@ -70,22 +70,22 @@
                                         </a>
                                     </li>
                                     <li class="col-6 col-sm-4 col-md-2">
-                                        <a href="#">
+                                        <a href="genre/romance.php">
                                             Romance
                                         </a>
                                     </li>
                                     <li class="col-6 col-sm-4 col-md-2">
-                                        <a href="#">
+                                        <a href="genre/scifi.php">
                                             Sci-fi
                                         </a>
                                     </li>
                                     <li class="col-6 col-sm-4 col-md-2">
-                                        <a href="#">
+                                        <a href="genre/sol.php">
                                             Slice of Life
                                         </a>
                                     </li>
                                     <li class="col-6 col-sm-4 col-md-2">
-                                        <a href="#">
+                                        <a href="genre/sport.php">
                                             Sports
                                         </a>
                                     </li>
