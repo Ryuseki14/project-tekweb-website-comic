@@ -158,6 +158,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -239,17 +240,13 @@
 
                         </ul>
                     </span>
-                    <a href="register.php" class="register">
-                        <i aria-hidden="true">
-                        </i>
-                        Register
-                    </a>
-                    <a href="index.php" class="Login">
-                        <i class="fa fa-user-circle" aria-hidden="true">
-                        </i>
-                        Login
-                    </a>
-
+                    <a href="logout.php" class="login">>
+                                    <i 
+                                        class="fa fa-user-circle" aria-hidden="true">
+                                    </i>
+                                        Log Out
+                                </a>
+                    
                     <div class="clear"></div>
                 </div>
             </div>
@@ -269,8 +266,8 @@
         var input, filter, ul, li, a, i, txtValue;
         input = document.getElementById('myInput');
         filter = input.value.toUpperCase();
-        con = document.getElementById("content");
-        li = con.getElementsByTagName('li');
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
 
         // Loop through all list items, and hide those who don't match the search query
         for (i = 0; i < li.length; i++) {
