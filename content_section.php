@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="comic.css">
 
-    
+
     <link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css?family=Lato%3A400%2C500%2C600%2C700%7CPoppins%3A400%2C500%2C600%2C700&#038;ver=2.6.1' type='text/css' media='all' />
     <script>
         var max_bookmark = 200;
@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12">
                     <div class="post-title">
-                        <h1>Komik Banana</h1>
+                        <h1 id="101">Komik Banana</h1>
                     </div>
                 </div>
             </div>
@@ -51,8 +51,24 @@
                                 </a>
                                 <br>
                                 <br>
-                                <div class="bookmark" style="width : 180px" data-id="96904"></div>
+                                <div class="bookmark" style="width : 180px" data-id="101">
+                                    <i class="far fa-bookmark" aria-hidden="true">Bookmark</i>
+                                </div>
+
                             </div>
+                            <script>
+                                jQuery(document).ready(async function() {
+                                    console.log(await fetch('https://test.asura.gg/api/collect/', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: JSON.stringify({
+                                            "postID": 101
+                                        })
+                                    }))
+                                });
+                            </script>
 
                             <div class="infox">
 
@@ -138,8 +154,7 @@
                                             </div>
                                             <div class="summary-content">
                                                 <div class="author-content">
-                                                    <a href="#" rel="tag">Romance</a>
-                                                    ,
+                                                    <a href="#" rel="tag">Romance</a>,
                                                     <a href="#" rel="tag">Drama</a>
                                                 </div>
                                             </div>
@@ -164,7 +179,7 @@
                                             </div>
                                             <div class="summary-content">
                                                 <div class="author-content">
-                                                    <a href="#" rel="tag">Ongoing</a>
+                                                    <a href="#" rel="tag">Completed</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,7 +189,7 @@
                             <br>
                             <div id="init-links" class="nav-links">
                                 <a href="Comics.php" id="btn-read-last" class="btn btn-primary"> Read First</a>
-                                <a href="Comics.php" id="btn-read-first" class="btn btn-primary">Read Last</a>
+                                <a href="#" id="btn-read-first" class="btn btn-primary">Read Last</a>
                             </div>
                         </div>
                     </div>
@@ -198,7 +213,36 @@
                         </div>
                         <br>
                         <ul class="clstyle">
-                            
+                            <li data-num="4">
+                                <div class="chbox">
+                                    <div class="eph-num">
+                                        <a href="#">
+                                            <span class="chapternum">Chapter 4</span>
+                                            <span class="chapterdate">December 6, 2022</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-num="3">
+                                <div class="chbox">
+                                    <div class="eph-num">
+                                        <a href="#">
+                                            <span class="chapternum">Chapter 3</span>
+                                            <span class="chapterdate">November 2, 2020</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-num="2">
+                                <div class="chbox">
+                                    <div class="eph-num">
+                                        <a href="#">
+                                            <span class="chapternum">Chapter 2</span>
+                                            <span class="chapterdate">November 2, 2020</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
                             <li data-num="1">
                                 <div class="chbox">
                                     <div class="eph-num">
@@ -215,6 +259,7 @@
             </div>
         </div>
     </div>
+
     <div id="footer-placeholder"></div>
 
     <a href="#" class="scrollToTop" style="display: inline;">
